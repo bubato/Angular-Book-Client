@@ -1,0 +1,15 @@
+<div class="container">
+  <h3>BOOK SHOP</h3>
+    <ul class="list-group">
+      <li *ngFor="let item of bookItemList">
+        <span class="avatar inline">
+          <img src="https://www.pngmart.com/files/1/Book-Icon-PNG.png"
+              alt="naruto" width="200">
+        </span>
+        <span class="inline">
+          <div class="title">{{ item.title }} <span (click)="onBuy(item._id)" class="btn">🎁</span></div>
+          <p>{{ item.author }}</p>
+        </span>
+      </li>
+  </ul>
+</div>
